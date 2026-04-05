@@ -50,7 +50,7 @@ const uploadFile = async (req, res) => {
       courseCode,
       department,
       year: year ? parseInt(year) : undefined,
-      semester: semester ? parseInt(semester) : undefined,
+      semester: semester || undefined,
       section,
       uploadedBy: req.user._id,
       category: category || 'other'

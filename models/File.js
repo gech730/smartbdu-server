@@ -19,7 +19,7 @@ const fileSchema = new mongoose.Schema({
   courseCode: String,
   department: String,
   year: Number,
-  semester: Number,
+  semester: String,
   section: String,
   uploadedBy: {
     type: mongoose.Schema.Types.ObjectId,

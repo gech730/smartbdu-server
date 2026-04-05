@@ -36,6 +36,8 @@ const seedUsers = async () => {
         role: 'student',
         department: 'Computer Science',
         year: 3,
+        semester: '1',
+        section: 'A',
         phone: '+251922222222'
       },
       {
