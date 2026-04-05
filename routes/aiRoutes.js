@@ -6,5 +6,5 @@ const { protect } = require('../middleware/authMiddleware');
 router.post('/chat', protect, chatWithAI);
 router.post('/roadmap', protect, generateRoadmap);
 router.post('/cv', protect, generateCV);
-
+// comment
 module.exports = router;
