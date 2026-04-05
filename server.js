@@ -27,6 +27,7 @@ connectDB().catch((err) => {
 
 app.use(cors());
 app.use(express.json());
+app.use(cors({ origin: 'https://smart-bdu-client-2121.vercel.app/' }));
 app.use('/uploads', express.static('uploads'));
 
 app.use('/api/auth', authRoutes);
